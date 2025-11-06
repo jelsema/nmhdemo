@@ -1,0 +1,91 @@
+---
+title: "E Division Standings"
+---
+
+
+
+```{r}
+#| include: false
+
+# | results: hide
+# | message: false
+# | error: false
+# | warning: false
+
+
+library("googlesheets4")
+library("tidyverse")
+library("tinytable")
+
+googlesheets4::gs4_auth()
+
+
+
+# Read season data
+
+season <- read_sheet("https://docs.google.com/spreadsheets/d/1n77C-Pe6eofoOp3fiFg2mAGHT7XpGVp5r2uSpj4vZpE/edit?usp=drive_link")
+
+nplay <- nrow(season)
+idx_odd <- seq(1,nplay,2)
+idx_evn <- seq(2,nplay,2)
+
+# Read playoff data
+
+
+playoff <- read_sheet("https://docs.google.com/spreadsheets/d/1P2-dBGOQdH1IzU2TxTjOEajork-Wtol0fKv_2pC8Tms/edit?usp=drive_link")
+
+nplayp <- nrow(playoff)
+idx_oddp <- seq(1,nplayp,2)
+idx_evnp <- seq(2,nplayp,2)
+
+
+
+
+```
+
+
+### Regular Season
+
+```{r}
+#| warning: false
+
+
+
+season |> 
+  # tt( theme="striped" ) |> 
+  tt() |> 
+  style_tt( i=0, background="skyblue3" ) |> 
+  style_tt( i=idx_odd, background="white", color="grey20" ) |> 
+  style_tt( i=idx_evn, background="grey90", color="grey20" ) |> 
+  style_tt( align="c" ) |> 
+  theme_html( portable=TRUE )
+
+
+```
+
+
+
+
+### Playoffs
+
+
+```{r}
+#| warning: false
+
+
+if( any(playoff$W > 0) ){ 
+
+playoff |> 
+  # tt( theme="striped" ) |> 
+  tt() |> 
+  style_tt( i=0, background="skyblue3" ) |> 
+  style_tt( i=idx_odd, background="white", color="grey20" ) |> 
+  style_tt( i=idx_evn, background="grey90", color="grey20" ) |> 
+  style_tt( align="c" ) |> 
+  theme_html( portable=TRUE )
+
+}
+  
+```
+
+

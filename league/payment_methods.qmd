@@ -1,0 +1,38 @@
+---
+title: "Payment Methods"
+---
+
+
+
+## Pay using Venmo:
+
+- Account ID: **@nmhockey**
+- Do not accept the service fee if prompted. 
+  (No fee charged using Venmo except when using a CC where the fee is 3%)
+
+
+
+## Pay by check: 
+
+Checks should be made payable to NMHockey
+
+Mailing Address:
+
+::::{.columns}
+
+::: {.column width="15%"}
+:::
+::: {.column width="70%"}
+NMHockey
+
+7520 Roberts St. NE
+
+Albuquerque, NM 87109
+
+:::
+
+
+::::
+
+
+

@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "NM Hockey Demo"
+  favicon: images/general/favicon.jpg
+  navbar:
+    left:
+      - text: Information
+        menu:
+        - text: "Season Details"
+          href: league/season_details.qmd
+        - text: "Payment Methods"
+          href: league/payment_methods.qmd
+        - text: "New or Returning Player Information"
+          href: league/player_info.qmd
+      - text: About
+        menu:
+          - text: "the League"
+            href: league/league.qmd
+          - text: "the History"
+            href: league/history.qmd
+          - text: "the Rules"
+            href: league/rules.qmd
+          - text: "the Staff"
+            href: league/staff.qmd
+      - text: E Div
+        menu:
+          - text: "Teams"
+            href: divisions/Ediv/teams.qmd
+          - text: "Standings"
+            href: divisions/Ediv/standings.qmd
+          - text: "Goalies"
+            href: divisions/Ediv/goalies.qmd
+          - text: "Scores"
+            href: divisions/Ediv/scores.qmd
+
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    toggle: true
+    toc: true
+    page-layout: full
+    # css: styles.css
+    # other themes: Spacelab
+
+editor: source
+
+execute:
+  echo: false
+

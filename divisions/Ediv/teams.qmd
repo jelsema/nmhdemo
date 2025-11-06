@@ -1,0 +1,54 @@
+---
+title: "E Division Teams"
+---
+
+
+
+```{r}
+#| include: false
+
+# | results: hide
+# | message: false
+# | error: false
+# | warning: false
+
+
+library("googlesheets4")
+library("tidyverse")
+library("tinytable")
+
+googlesheets4::gs4_auth()
+
+
+# Read teams data
+
+teams <- read_sheet("https://docs.google.com/spreadsheets/d/1LAavWti7sxwgfcRw4tO4ECpkWZ5oWsL1vvbDPKycJPA/edit?usp=drive_link")
+
+
+nplay <- nrow(teams)
+idx_odd <- seq(1,nplay,2)
+idx_evn <- seq(2,nplay,2)
+
+```
+
+
+
+
+```{r}
+#| warning: false
+
+
+
+teams |> 
+  # tt( theme="striped" ) |> 
+  tt() |> 
+  style_tt( i=0, background="skyblue3" ) |> 
+  style_tt( i=idx_odd, background="white", color="grey20" ) |> 
+  style_tt( i=idx_evn, background="grey90", color="grey20" ) |> 
+  style_tt( align="c" ) |> 
+  theme_html( portable=TRUE )
+
+
+```
+
+

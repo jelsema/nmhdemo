@@ -1,0 +1,55 @@
+---
+title: "E Division Goalies"
+---
+
+
+
+```{r}
+#| include: false
+
+# | results: hide
+# | message: false
+# | error: false
+# | warning: false
+
+
+library("googlesheets4")
+library("tidyverse")
+library("tinytable")
+
+googlesheets4::gs4_auth()
+
+
+
+# Read scores data
+
+goalies <- read_sheet("https://docs.google.com/spreadsheets/d/1JJsE9A4X5NXep4POTjm9Fctvvl1b5T-5fzA1ZRSXDi0/edit?usp=drive_link")
+
+nplay <- nrow(goalies)
+idx_odd <- seq(1,nplay,2)
+idx_evn <- seq(2,nplay,2)
+
+
+
+
+```
+
+
+
+
+```{r}
+#| warning: false
+
+
+
+goalies |> 
+  # tt( theme="striped" ) |> 
+  tt() |> 
+  style_tt( i=0, background="skyblue3" ) |> 
+  style_tt( i=idx_odd, background="white", color="grey20" ) |> 
+  style_tt( i=idx_evn, background="grey90", color="grey20" ) |> 
+  style_tt( align="c" ) |> 
+  theme_html( portable=TRUE )
+
+
+```

@@ -1,0 +1,62 @@
+---
+title: "E Division Scores"
+---
+
+
+
+```{r}
+#| include: false
+
+# | results: hide
+# | message: false
+# | error: false
+# | warning: false
+
+
+library("googlesheets4")
+library("tidyverse")
+library("tinytable")
+
+googlesheets4::gs4_auth()
+
+
+
+# Read scores data
+
+scores <- read_sheet("https://docs.google.com/spreadsheets/d/16LFFxrTdfarSuJUx-eCk9385awKteJzOA4CBg3WmLmE/edit?usp=drive_link")
+
+scores <- scores |> 
+  mutate(
+    at = " at "
+  ) |> 
+  dplyr::select( WEEK, DATE, TIME, AWAY, AS, at, HS, HOME )
+
+idx_evn <- which( scores$WEEK %% 2 == 0 )
+idx_odd  <- which( scores$WEEK %% 2 == 1 )
+idx_off  <- which( is.na(scores$WEEK) )
+
+
+```
+
+
+
+
+```{r}
+#| warning: false
+
+
+
+scores |> 
+  # tt( theme="striped" ) |> 
+  tt() |> 
+  style_tt( i=0, background="skyblue3" ) |> 
+  style_tt( i=idx_off, background="white", color="grey20" ) |> 
+  style_tt( i=idx_odd, background="white", color="grey20" ) |> 
+  style_tt( i=idx_evn, background="grey90", color="grey20" ) |> 
+  style_tt( j=c(1,2,3,5,6,7), align="c" ) |> 
+  theme_html( portable=TRUE )
+
+
+```
+
+

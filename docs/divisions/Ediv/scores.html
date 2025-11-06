@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>E Division Scores – NM Hockey Demo</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/general/favicon.jpg" rel="icon" type="image/jpeg">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-08799928d293638fe9563d5c5a2794e5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">NM Hockey Demo</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-information" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Information</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-information">    
+        <li>
+    <a class="dropdown-item" href="../../league/season_details.html">
+ <span class="dropdown-text">Season Details</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../league/payment_methods.html">
+ <span class="dropdown-text">Payment Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../league/player_infor.qmd">
+ <span class="dropdown-text">New or Returning Player Information</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../../league/league.html">
+ <span class="dropdown-text">the League</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../league/history.html">
+ <span class="dropdown-text">the History</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../league/rules.html">
+ <span class="dropdown-text">the Rules</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../league/staff.html">
+ <span class="dropdown-text">the Staff</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-e-div" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">E Div</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-e-div">    
+        <li>
+    <a class="dropdown-item" href="../../divisions/Ediv/teams.html">
+ <span class="dropdown-text">Teams</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../divisions/Ediv/standings.html">
+ <span class="dropdown-text">Standings</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../divisions/Ediv/goalies.html">
+ <span class="dropdown-text">Goalies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../divisions/Ediv/scores.html">
+ <span class="dropdown-text">Scores</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">E Division Scores</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script>
+// TinyTable JavaScript Framework
+// Function factory for creating table-specific operations
+window.TinyTable = {
+  // Helper to create Tabulator instance with Luxon dependency
+  createTabulator: function(elementId, config) {
+    const { DateTime } = window.luxon || {};
+    return new Tabulator(elementId, {
+      dependencies: { DateTime },
+      ...config
+    });
+  },
+
+  createTableFunctions: function (tableId) {
+    const spans = []; // {top, left, rowspan, colspan}
+
+    function resolveToAnchor(i, j) {
+      // find if (i,j) is inside any span; return that span's anchor if so
+      for (const s of spans) {
+        if (
+          i >= s.top && i < s.top + s.rowspan &&
+          j >= s.left && j < s.left + s.colspan
+        ) {
+          return { i: s.top, j: s.left };
+        }
+      }
+      return { i, j };
+    }
+
+    return {
+      styleCell: function (i, j, css_id) {
+        // normalize possible string indices
+        i = +i; j = +j;
+
+        const table = document.getElementById(tableId);
+        const { i: ai, j: aj } = resolveToAnchor(i, j);
+        const cell = table.querySelector(`[data-row="${ai}"][data-col="${aj}"]`);
+        if (!cell) return; // silently skip if not found (e.g., removed)
+        cell.classList.add(css_id);
+      },
+
+      spanCell: function (i, j, rowspan, colspan) {
+        i = +i; j = +j;
+
+        const table = document.getElementById(tableId);
+        const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+        if (!targetCell) {
+          console.warn(`Cell at (${i}, ${j}) not found.`);
+          return;
+        }
+
+        // record span so future styleCell calls map to the anchor
+        spans.push({ top: i, left: j, rowspan, colspan });
+
+        // remove covered cells (except anchor)
+        const cellsToRemove = [];
+        for (let r = 0; r < rowspan; r++) {
+          for (let c = 0; c < colspan; c++) {
+            if (r === 0 && c === 0) continue;
+            const cell = table.querySelector(`[data-row="${i + r}"][data-col="${j + c}"]`);
+            if (cell) cellsToRemove.push(cell);
+          }
+        }
+        cellsToRemove.forEach(cell => cell.remove());
+
+        // set HTML attributes for clarity/serialization
+        targetCell.setAttribute('rowspan', rowspan);
+        targetCell.setAttribute('colspan', colspan);
+      }
+    };
+  }
+};
+
+// =============================================================================
+// TABULATOR CUSTOM FORMATTERS (revised)
+// =============================================================================
+
+// SVG sparkline
+function tinytable_sparkline(cell, p = {}) {
+  let values = cell.getValue() ?? [];
+  if (!Array.isArray(values)) values = [values];
+  // coerce to finite numbers & strip NaNs
+  values = values.map(Number).filter(Number.isFinite);
+  const n = values.length;
+  if (n === 0) return "";
+
+  const w = p.width ?? 120, h = p.height ?? 30, pad = p.pad ?? 2;
+  const color = p.color ?? "currentColor", sw = p.strokeWidth ?? 1.5;
+  const fill = p.fillArea ?? false;
+  const showDots = p.showDots ?? false;
+  const dotR = p.dotRadius ?? 1.75;
+  const ariaLabel = p.ariaLabel ?? `sparkline with ${n} points`;
+
+  // single pass for min/max
+  let min = Infinity, max = -Infinity;
+  for (let v of values) { if (v < min) min = v; if (v > max) max = v; }
+  const span = (max - min) || 1;
+
+  const x = i => pad + (i * (w - 2 * pad)) / Math.max(n - 1, 1);
+  const y = v => h - pad - ((v - min) * (h - 2 * pad)) / span;
+
+  let d = `M ${x(0)},${y(values[0])}`;
+  for (let i = 1; i < n; i++) d += ` L ${x(i)},${y(values[i])}`;
+
+  const NS = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+  svg.setAttribute("width", w);
+  svg.setAttribute("height", h);
+  svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", ariaLabel);
+
+  const path = document.createElementNS(NS, "path");
+  path.setAttribute("stroke", color);
+  path.setAttribute("stroke-width", sw);
+  path.setAttribute("vector-effect", "non-scaling-stroke");
+
+  if (fill) {
+    const area = document.createElementNS(NS, "path");
+    area.setAttribute("d", d + ` L ${x(n - 1)},${h - pad} L ${x(0)},${h - pad} Z`);
+    area.setAttribute("fill", color);
+    area.setAttribute("fill-opacity", p.fillOpacity ?? 0.25);
+    svg.appendChild(area);
+    path.setAttribute("d", d);
+    path.setAttribute("fill", "none");
+  } else {
+    path.setAttribute("d", d);
+    path.setAttribute("fill", "none");
+  }
+  svg.appendChild(path);
+
+  if (showDots) {
+    const dot = (i) => {
+      const c = document.createElementNS(NS, "circle");
+      c.setAttribute("cx", x(i));
+      c.setAttribute("cy", y(values[i]));
+      c.setAttribute("r", dotR);
+      c.setAttribute("fill", color);
+      return c;
+    };
+    if (p.dots === "end") svg.appendChild(dot(n - 1));
+    else if (p.dots === "minmax") {
+      const iMin = values.indexOf(min), iMax = values.indexOf(max);
+      svg.appendChild(dot(iMin)); svg.appendChild(dot(iMax));
+    } else if (p.dots === true) {
+      for (let i = 0; i < n; i++) svg.appendChild(dot(i));
+    }
+  }
+
+  if (p.title) {
+    const title = document.createElementNS(NS, "title");
+    title.textContent = p.title;
+    svg.appendChild(title);
+  }
+
+  return svg;
+}
+
+// Canvas histogram
+function tinytable_histogram(cell, p = {}) {
+  let data = cell.getValue() ?? [];
+  if (!Array.isArray(data)) data = [data];
+  data = data.map(Number).filter(Number.isFinite);
+  const n = data.length;
+  if (n === 0) return "";
+
+  const cssWidth = p.width ?? 120;
+  const cssHeight = p.height ?? 30;
+  const color = p.color ?? "currentColor";
+  const gap = p.gap ?? 1;         // px gap between bars
+  const pad = p.pad ?? 0;         // inner padding
+  const ariaLabel = p.ariaLabel ?? `histogram with ${n} observations`;
+
+  // robust bins: Sturges as default; allow override
+  const k = Math.max(1, Math.min(64, p.bins ?? Math.ceil(Math.log2(n) + 1)));
+
+  // stats
+  let min = Infinity, max = -Infinity;
+  for (let v of data) { if (v < min) min = v; if (v > max) max = v; }
+
+  // zero-range safeguard -> single centered bar
+  const range = max - min;
+  const binWidth = range > 0 ? range / k : 1;
+
+  const bins = new Array(k).fill(0);
+  if (range === 0) {
+    // put all mass in the middle bin
+    bins[Math.floor(k / 2)] = n;
+  } else {
+    for (let v of data) {
+      let idx = Math.floor((v - min) / binWidth);
+      if (idx >= k) idx = k - 1; // clamp max edge
+      bins[idx]++;
+    }
+  }
+  const maxCount = Math.max(...bins, 1);
+
+  // HiDPI / Retina crispness
+  const dpr = window.devicePixelRatio || 1;
+  const canvas = document.createElement("canvas");
+  canvas.width = Math.round(cssWidth * dpr);
+  canvas.height = Math.round(cssHeight * dpr);
+  canvas.style.width = cssWidth + "px";
+  canvas.style.height = cssHeight + "px";
+  canvas.setAttribute("role", "img");
+  canvas.setAttribute("aria-label", ariaLabel);
+
+  const ctx = canvas.getContext("2d");
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, cssWidth, cssHeight);
+  ctx.fillStyle = color;
+
+  const innerW = cssWidth - pad * 2;
+  const innerH = cssHeight - pad * 2;
+  const barW = innerW / k;
+
+  for (let i = 0; i < k; i++) {
+    const h = (bins[i] / maxCount) * innerH;
+    const x = pad + i * barW;
+    const y = cssHeight - pad - h;
+    // 0.5 translate helps crisp vertical edges on some displays
+    ctx.fillRect(Math.round(x) + 0.5, Math.floor(y), Math.max(0, barW - gap), Math.ceil(h));
+  }
+
+  if (p.title) canvas.title = p.title;
+  return canvas;
+}
+
+// Unified sorter that uses hidden rank field
+function tinytable_rank_sorter(a, b, aRow, bRow, column, dir, sorterParams) {
+  const rankField = sorterParams.rankField;
+  const aVal = aRow.getData()[rankField] || 0;
+  const bVal = bRow.getData()[rankField] || 0;
+  return aVal - bVal;
+}
+</script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_c8yktfu2g8j4opraud2f = TinyTable.createTableFunctions("tinytable_c8yktfu2g8j4opraud2f");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '44', j: 4 }, { i: '44', j: 8 } ], css_id: 'tinytable_css_eo47efhj199gxs04z08e',}, 
+          { positions: [ { i: '3', j: 4 }, { i: '4', j: 4 }, { i: '7', j: 4 }, { i: '8', j: 4 }, { i: '13', j: 4 }, { i: '14', j: 4 }, { i: '19', j: 4 }, { i: '20', j: 4 }, { i: '23', j: 4 }, { i: '24', j: 4 }, { i: '27', j: 4 }, { i: '28', j: 4 }, { i: '31', j: 4 }, { i: '32', j: 4 }, { i: '35', j: 4 }, { i: '36', j: 4 }, { i: '39', j: 4 }, { i: '40', j: 4 }, { i: '43', j: 4 }, { i: '3', j: 8 }, { i: '4', j: 8 }, { i: '7', j: 8 }, { i: '8', j: 8 }, { i: '13', j: 8 }, { i: '14', j: 8 }, { i: '19', j: 8 }, { i: '20', j: 8 }, { i: '23', j: 8 }, { i: '24', j: 8 }, { i: '27', j: 8 }, { i: '28', j: 8 }, { i: '31', j: 8 }, { i: '32', j: 8 }, { i: '35', j: 8 }, { i: '36', j: 8 }, { i: '39', j: 8 }, { i: '40', j: 8 }, { i: '43', j: 8 } ], css_id: 'tinytable_css_ktt0qb3vnpc3dwc1qri2',}, 
+          { positions: [ { i: '1', j: 4 }, { i: '2', j: 4 }, { i: '5', j: 4 }, { i: '6', j: 4 }, { i: '9', j: 4 }, { i: '10', j: 4 }, { i: '11', j: 4 }, { i: '12', j: 4 }, { i: '15', j: 4 }, { i: '16', j: 4 }, { i: '17', j: 4 }, { i: '18', j: 4 }, { i: '21', j: 4 }, { i: '22', j: 4 }, { i: '25', j: 4 }, { i: '26', j: 4 }, { i: '29', j: 4 }, { i: '30', j: 4 }, { i: '33', j: 4 }, { i: '34', j: 4 }, { i: '37', j: 4 }, { i: '38', j: 4 }, { i: '41', j: 4 }, { i: '42', j: 4 }, { i: '1', j: 8 }, { i: '2', j: 8 }, { i: '5', j: 8 }, { i: '6', j: 8 }, { i: '9', j: 8 }, { i: '10', j: 8 }, { i: '11', j: 8 }, { i: '12', j: 8 }, { i: '15', j: 8 }, { i: '16', j: 8 }, { i: '17', j: 8 }, { i: '18', j: 8 }, { i: '21', j: 8 }, { i: '22', j: 8 }, { i: '25', j: 8 }, { i: '26', j: 8 }, { i: '29', j: 8 }, { i: '30', j: 8 }, { i: '33', j: 8 }, { i: '34', j: 8 }, { i: '37', j: 8 }, { i: '38', j: 8 }, { i: '41', j: 8 }, { i: '42', j: 8 } ], css_id: 'tinytable_css_jj7eapqpkdkfvkwazgec',}, 
+          { positions: [ { i: '0', j: 4 }, { i: '0', j: 8 } ], css_id: 'tinytable_css_ffb0uyds84kcffef08kd',}, 
+          { positions: [ { i: '44', j: 1 }, { i: '44', j: 2 }, { i: '44', j: 3 }, { i: '44', j: 5 }, { i: '44', j: 6 }, { i: '44', j: 7 } ], css_id: 'tinytable_css_4xzvfcqf2xb48st4gf5y',}, 
+          { positions: [ { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '7', j: 1 }, { i: '8', j: 1 }, { i: '13', j: 1 }, { i: '14', j: 1 }, { i: '19', j: 1 }, { i: '20', j: 1 }, { i: '23', j: 1 }, { i: '24', j: 1 }, { i: '27', j: 1 }, { i: '28', j: 1 }, { i: '31', j: 1 }, { i: '32', j: 1 }, { i: '35', j: 1 }, { i: '36', j: 1 }, { i: '39', j: 1 }, { i: '40', j: 1 }, { i: '43', j: 1 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '7', j: 2 }, { i: '8', j: 2 }, { i: '13', j: 2 }, { i: '14', j: 2 }, { i: '19', j: 2 }, { i: '20', j: 2 }, { i: '23', j: 2 }, { i: '24', j: 2 }, { i: '27', j: 2 }, { i: '28', j: 2 }, { i: '31', j: 2 }, { i: '32', j: 2 }, { i: '35', j: 2 }, { i: '36', j: 2 }, { i: '39', j: 2 }, { i: '40', j: 2 }, { i: '43', j: 2 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '7', j: 3 }, { i: '8', j: 3 }, { i: '13', j: 3 }, { i: '14', j: 3 }, { i: '19', j: 3 }, { i: '20', j: 3 }, { i: '23', j: 3 }, { i: '24', j: 3 }, { i: '27', j: 3 }, { i: '28', j: 3 }, { i: '31', j: 3 }, { i: '32', j: 3 }, { i: '35', j: 3 }, { i: '36', j: 3 }, { i: '39', j: 3 }, { i: '40', j: 3 }, { i: '43', j: 3 }, { i: '3', j: 5 }, { i: '4', j: 5 }, { i: '7', j: 5 }, { i: '8', j: 5 }, { i: '13', j: 5 }, { i: '14', j: 5 }, { i: '19', j: 5 }, { i: '20', j: 5 }, { i: '23', j: 5 }, { i: '24', j: 5 }, { i: '27', j: 5 }, { i: '28', j: 5 }, { i: '31', j: 5 }, { i: '32', j: 5 }, { i: '35', j: 5 }, { i: '36', j: 5 }, { i: '39', j: 5 }, { i: '40', j: 5 }, { i: '43', j: 5 }, { i: '3', j: 6 }, { i: '4', j: 6 }, { i: '7', j: 6 }, { i: '8', j: 6 }, { i: '13', j: 6 }, { i: '14', j: 6 }, { i: '19', j: 6 }, { i: '20', j: 6 }, { i: '23', j: 6 }, { i: '24', j: 6 }, { i: '27', j: 6 }, { i: '28', j: 6 }, { i: '31', j: 6 }, { i: '32', j: 6 }, { i: '35', j: 6 }, { i: '36', j: 6 }, { i: '39', j: 6 }, { i: '40', j: 6 }, { i: '43', j: 6 }, { i: '3', j: 7 }, { i: '4', j: 7 }, { i: '7', j: 7 }, { i: '8', j: 7 }, { i: '13', j: 7 }, { i: '14', j: 7 }, { i: '19', j: 7 }, { i: '20', j: 7 }, { i: '23', j: 7 }, { i: '24', j: 7 }, { i: '27', j: 7 }, { i: '28', j: 7 }, { i: '31', j: 7 }, { i: '32', j: 7 }, { i: '35', j: 7 }, { i: '36', j: 7 }, { i: '39', j: 7 }, { i: '40', j: 7 }, { i: '43', j: 7 } ], css_id: 'tinytable_css_zr37bkk7t0jibxukdc75',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '5', j: 1 }, { i: '6', j: 1 }, { i: '9', j: 1 }, { i: '10', j: 1 }, { i: '11', j: 1 }, { i: '12', j: 1 }, { i: '15', j: 1 }, { i: '16', j: 1 }, { i: '17', j: 1 }, { i: '18', j: 1 }, { i: '21', j: 1 }, { i: '22', j: 1 }, { i: '25', j: 1 }, { i: '26', j: 1 }, { i: '29', j: 1 }, { i: '30', j: 1 }, { i: '33', j: 1 }, { i: '34', j: 1 }, { i: '37', j: 1 }, { i: '38', j: 1 }, { i: '41', j: 1 }, { i: '42', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '5', j: 2 }, { i: '6', j: 2 }, { i: '9', j: 2 }, { i: '10', j: 2 }, { i: '11', j: 2 }, { i: '12', j: 2 }, { i: '15', j: 2 }, { i: '16', j: 2 }, { i: '17', j: 2 }, { i: '18', j: 2 }, { i: '21', j: 2 }, { i: '22', j: 2 }, { i: '25', j: 2 }, { i: '26', j: 2 }, { i: '29', j: 2 }, { i: '30', j: 2 }, { i: '33', j: 2 }, { i: '34', j: 2 }, { i: '37', j: 2 }, { i: '38', j: 2 }, { i: '41', j: 2 }, { i: '42', j: 2 }, { i: '1', j: 3 }, { i: '2', j: 3 }, { i: '5', j: 3 }, { i: '6', j: 3 }, { i: '9', j: 3 }, { i: '10', j: 3 }, { i: '11', j: 3 }, { i: '12', j: 3 }, { i: '15', j: 3 }, { i: '16', j: 3 }, { i: '17', j: 3 }, { i: '18', j: 3 }, { i: '21', j: 3 }, { i: '22', j: 3 }, { i: '25', j: 3 }, { i: '26', j: 3 }, { i: '29', j: 3 }, { i: '30', j: 3 }, { i: '33', j: 3 }, { i: '34', j: 3 }, { i: '37', j: 3 }, { i: '38', j: 3 }, { i: '41', j: 3 }, { i: '42', j: 3 }, { i: '1', j: 5 }, { i: '2', j: 5 }, { i: '5', j: 5 }, { i: '6', j: 5 }, { i: '9', j: 5 }, { i: '10', j: 5 }, { i: '11', j: 5 }, { i: '12', j: 5 }, { i: '15', j: 5 }, { i: '16', j: 5 }, { i: '17', j: 5 }, { i: '18', j: 5 }, { i: '21', j: 5 }, { i: '22', j: 5 }, { i: '25', j: 5 }, { i: '26', j: 5 }, { i: '29', j: 5 }, { i: '30', j: 5 }, { i: '33', j: 5 }, { i: '34', j: 5 }, { i: '37', j: 5 }, { i: '38', j: 5 }, { i: '41', j: 5 }, { i: '42', j: 5 }, { i: '1', j: 6 }, { i: '2', j: 6 }, { i: '5', j: 6 }, { i: '6', j: 6 }, { i: '9', j: 6 }, { i: '10', j: 6 }, { i: '11', j: 6 }, { i: '12', j: 6 }, { i: '15', j: 6 }, { i: '16', j: 6 }, { i: '17', j: 6 }, { i: '18', j: 6 }, { i: '21', j: 6 }, { i: '22', j: 6 }, { i: '25', j: 6 }, { i: '26', j: 6 }, { i: '29', j: 6 }, { i: '30', j: 6 }, { i: '33', j: 6 }, { i: '34', j: 6 }, { i: '37', j: 6 }, { i: '38', j: 6 }, { i: '41', j: 6 }, { i: '42', j: 6 }, { i: '1', j: 7 }, { i: '2', j: 7 }, { i: '5', j: 7 }, { i: '6', j: 7 }, { i: '9', j: 7 }, { i: '10', j: 7 }, { i: '11', j: 7 }, { i: '12', j: 7 }, { i: '15', j: 7 }, { i: '16', j: 7 }, { i: '17', j: 7 }, { i: '18', j: 7 }, { i: '21', j: 7 }, { i: '22', j: 7 }, { i: '25', j: 7 }, { i: '26', j: 7 }, { i: '29', j: 7 }, { i: '30', j: 7 }, { i: '33', j: 7 }, { i: '34', j: 7 }, { i: '37', j: 7 }, { i: '38', j: 7 }, { i: '41', j: 7 }, { i: '42', j: 7 } ], css_id: 'tinytable_css_b3swvqtz7y5n9gpwwngf',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 5 }, { i: '0', j: 6 }, { i: '0', j: 7 } ], css_id: 'tinytable_css_ashsnubu2rmt8x8u8hl7',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_c8yktfu2g8j4opraud2f.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <style>
+
+/* ========================================================================
+ * tinytable CSS - Core styling for HTML table output
+ * ======================================================================== */
+
+/* ========================================================================
+ * CSS Custom Properties (Theme Variables)
+ * ======================================================================== */
+.tinytable {
+    /* Colors */
+    --tt-border-color: black;
+    --tt-header-border-color: black;
+    --tt-striped-bg: rgba(0, 0, 0, .05);
+    --tt-hover-bg: rgba(0, 0, 0, .075);
+    --tt-caption-color: #6c757d;
+    --tt-footnote-color: #6c757d;
+
+    /* Spacing */
+    --tt-cell-padding: .5rem;
+    --tt-cell-padding-sm: .25rem;
+    --tt-table-margin: .5rem 0;
+    --tt-caption-padding: .5rem 0;
+    --tt-footnote-padding: .2rem .5rem;
+    --tt-footnote-first-padding-top: .5rem;
+    --tt-footnote-gap: .1rem;
+
+    /* Typography */
+    --tt-font-size-footnote: 0.875rem;
+    --tt-font-size-sup: 0.75em;
+    --tt-line-height-footnote: 1.25;
+    --tt-line-height-footnote-tight: 1.2;
+    --tt-font-weight-header: normal;
+
+    /* Border widths */
+    --tt-border-width: 1px;
+    --tt-border-width-tbody: 2px;
+}
+
+/* ========================================================================
+ * Base Table Styles
+ * ======================================================================== */
+.tinytable {
+    width: 100%;
+    margin: var(--tt-table-margin);
+    border-collapse: collapse;
+    background-color: transparent;
+    font-family: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.tinytable * {
+    font-family: inherit;
+}
+
+/* ========================================================================
+ * Cell Styles
+ * ======================================================================== */
+.tinytable th,
+.tinytable td {
+    position: relative;
+    padding: var(--tt-cell-padding);
+    vertical-align: top;
+}
+
+.tinytable thead th {
+    text-align: left;
+    vertical-align: bottom;
+    font-weight: var(--tt-font-weight-header);
+    border-bottom: none;
+}
+
+.tinytable thead th[align="center"] {
+    text-align: center;
+}
+
+.tinytable tbody + tbody {
+    border-top: var(--tt-border-width-tbody) solid var(--tt-border-color);
+}
+
+/* ========================================================================
+ * Table Variants
+ * ======================================================================== */
+
+/* Small padding variant */
+.tinytable-sm th,
+.tinytable-sm td {
+    padding: var(--tt-cell-padding-sm);
+}
+
+/* Bordered variant */
+.tinytable-bordered {
+    border: var(--tt-border-width) solid var(--tt-border-color);
+}
+
+.tinytable-bordered th,
+.tinytable-bordered td {
+    border: var(--tt-border-width) solid var(--tt-border-color);
+}
+
+/* Striped rows variant */
+.tinytable-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--tt-striped-bg);
+}
+
+/* Hover effect variant */
+.tinytable-hover tbody tr:hover {
+    background-color: var(--tt-hover-bg);
+}
+
+/* Responsive wrapper */
+.tinytable-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ========================================================================
+ * Custom Border System (Pseudo-elements)
+ * ======================================================================== */
+.tinytable :is(td, th)[class*="tinytable_css_"] {
+    position: relative;
+
+    /* Border control variables */
+    --border-top: 0;
+    --border-right: 0;
+    --border-bottom: 0;
+    --border-left: 0;
+
+    /* Border color variables */
+    --line-color-top: currentColor;
+    --line-color-right: currentColor;
+    --line-color-bottom: currentColor;
+    --line-color-left: currentColor;
+
+    /* Border width variables */
+    --line-width-top: 0.1em;
+    --line-width-right: 0.1em;
+    --line-width-bottom: 0.1em;
+    --line-width-left: 0.1em;
+
+    /* Border trim variables */
+    --trim-top-left: 0%;
+    --trim-top-right: 0%;
+    --trim-right-top: 0%;
+    --trim-right-bottom: 0%;
+    --trim-bottom-left: 0%;
+    --trim-bottom-right: 0%;
+    --trim-left-top: 0%;
+    --trim-left-bottom: 0%;
+}
+
+/* Top, left, and right borders using ::before */
+.tinytable :is(td, th)[class*="tinytable_css_"]::before {
+    content: "";
+    position: absolute;
+    top: var(--trim-top-left, var(--trim-top-right, 0));
+    left: var(--trim-left-top, 0);
+    right: var(--trim-right-top, 0);
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1;
+    border-top: calc(var(--border-top) * var(--line-width-top)) solid var(--line-color-top);
+    border-right: calc(var(--border-right) * var(--line-width-right)) solid var(--line-color-right);
+    border-left: calc(var(--border-left) * var(--line-width-left)) solid var(--line-color-left);
+}
+
+/* Bottom border using ::after */
+.tinytable :is(td, th)[class*="tinytable_css_"]::after {
+    content: "";
+    position: absolute;
+    left: var(--trim-bottom-left, 0);
+    right: var(--trim-bottom-right, 0);
+    bottom: var(--trim-left-bottom, var(--trim-right-bottom, 0));
+    height: calc(var(--border-bottom) * var(--line-width-bottom));
+    background: var(--line-color-bottom);
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* ========================================================================
+ * Container and Layout Components
+ * ======================================================================== */
+.tinytable-container {
+    padding: 10px;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: auto;
+    height: auto;
+}
+
+/* ========================================================================
+ * Caption Styling
+ * ======================================================================== */
+.tinytable caption {
+    padding: var(--tt-caption-padding);
+    /* color: var(--tt-caption-color); */
+    caption-side: top;
+    font-size: 1rem;
+    text-align: left;
+}
+
+/* ========================================================================
+ * Footnotes and Table Footer
+ * ======================================================================== */
+
+.tinytable tfoot tr:first-child td {
+    padding-top: var(--tt-footnote-first-padding-top);
+}
+
+.tinytable tfoot td {
+    padding: var(--tt-footnote-padding);
+    font-size: var(--tt-font-size-footnote);
+    line-height: 1.25;
+    background-color: transparent;
+}
+
+/* Remove extra gap between footnote rows */
+.tinytable tfoot tr + tr td {
+    padding-top: var(--tt-footnote-gap);
+}
+
+/* Make superscripts not inflate line boxes */
+.tinytable tfoot sup {
+    font-size: var(--tt-font-size-sup);
+    line-height: 0;
+    vertical-align: text-top;
+}
+
+/* Slightly tighter for wrapped footnote text */
+.tinytable tfoot tr:nth-child(n+2) td {
+    line-height: 1.2;
+}
+
+</style>
+    <style>
+    /* tinytable css entries after */
+    #tinytable_c8yktfu2g8j4opraud2f td.tinytable_css_eo47efhj199gxs04z08e, #tinytable_c8yktfu2g8j4opraud2f th.tinytable_css_eo47efhj199gxs04z08e {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: black; --line-color-right: black; --line-color-top: black; --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; color: #333333; background-color: #E5E5E5 }
+    #tinytable_c8yktfu2g8j4opraud2f td.tinytable_css_ktt0qb3vnpc3dwc1qri2, #tinytable_c8yktfu2g8j4opraud2f th.tinytable_css_ktt0qb3vnpc3dwc1qri2 { color: #333333; background-color: #E5E5E5 }
+    #tinytable_c8yktfu2g8j4opraud2f td.tinytable_css_jj7eapqpkdkfvkwazgec, #tinytable_c8yktfu2g8j4opraud2f th.tinytable_css_jj7eapqpkdkfvkwazgec { color: #333333; background-color: white }
+    #tinytable_c8yktfu2g8j4opraud2f td.tinytable_css_ffb0uyds84kcffef08kd, #tinytable_c8yktfu2g8j4opraud2f th.tinytable_css_ffb0uyds84kcffef08kd {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: black; --line-color-right: black; --line-color-top: black; --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; background-color: #6CA6CD }
+    #tinytable_c8yktfu2g8j4opraud2f td.tinytable_css_4xzvfcqf2xb48st4gf5y, #tinytable_c8yktfu2g8j4opraud2f th.tinytable_css_4xzvfcqf2xb48st4gf5y {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: black; --line-color-right: black; --line-color-top: black; --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center; color: #333333; background-color: #E5E5E5 }
+    #tinytable_c8yktfu2g8j4opraud2f td.tinytable_css_zr37bkk7t0jibxukdc75, #tinytable_c8yktfu2g8j4opraud2f th.tinytable_css_zr37bkk7t0jibxukdc75 { text-align: center; color: #333333; background-color: #E5E5E5 }
+    #tinytable_c8yktfu2g8j4opraud2f td.tinytable_css_b3swvqtz7y5n9gpwwngf, #tinytable_c8yktfu2g8j4opraud2f th.tinytable_css_b3swvqtz7y5n9gpwwngf { text-align: center; color: #333333; background-color: white }
+    #tinytable_c8yktfu2g8j4opraud2f td.tinytable_css_ashsnubu2rmt8x8u8hl7, #tinytable_c8yktfu2g8j4opraud2f th.tinytable_css_ashsnubu2rmt8x8u8hl7 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: black; --line-color-right: black; --line-color-top: black; --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center; background-color: #6CA6CD }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_c8yktfu2g8j4opraud2f" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">WEEK</th>
+                <th scope="col" data-row="0" data-col="2">DATE</th>
+                <th scope="col" data-row="0" data-col="3">TIME</th>
+                <th scope="col" data-row="0" data-col="4">AWAY</th>
+                <th scope="col" data-row="0" data-col="5">AS</th>
+                <th scope="col" data-row="0" data-col="6">at</th>
+                <th scope="col" data-row="0" data-col="7">HS</th>
+                <th scope="col" data-row="0" data-col="8">HOME</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">1</td>
+                  <td data-row="1" data-col="2">2025-07-13</td>
+                  <td data-row="1" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="1" data-col="4">Thunder</td>
+                  <td data-row="1" data-col="5">2</td>
+                  <td data-row="1" data-col="6">at</td>
+                  <td data-row="1" data-col="7">1</td>
+                  <td data-row="1" data-col="8">Grizzlies</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">1</td>
+                  <td data-row="2" data-col="2">2025-07-13</td>
+                  <td data-row="2" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="2" data-col="4">Gargoyles</td>
+                  <td data-row="2" data-col="5">3</td>
+                  <td data-row="2" data-col="6">at</td>
+                  <td data-row="2" data-col="7">7</td>
+                  <td data-row="2" data-col="8">Nailers</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">2</td>
+                  <td data-row="3" data-col="2">2025-07-20</td>
+                  <td data-row="3" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="3" data-col="4">Nailers</td>
+                  <td data-row="3" data-col="5">3</td>
+                  <td data-row="3" data-col="6">at</td>
+                  <td data-row="3" data-col="7">6</td>
+                  <td data-row="3" data-col="8">Thunder</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1">2</td>
+                  <td data-row="4" data-col="2">2025-07-20</td>
+                  <td data-row="4" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="4" data-col="4">Grizzlies</td>
+                  <td data-row="4" data-col="5">3</td>
+                  <td data-row="4" data-col="6">at</td>
+                  <td data-row="4" data-col="7">2</td>
+                  <td data-row="4" data-col="8">Gargoyles</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="1">3</td>
+                  <td data-row="5" data-col="2">2025-07-27</td>
+                  <td data-row="5" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="5" data-col="4">Grizzlies</td>
+                  <td data-row="5" data-col="5">4</td>
+                  <td data-row="5" data-col="6">at</td>
+                  <td data-row="5" data-col="7">7</td>
+                  <td data-row="5" data-col="8">Nailers</td>
+                </tr>
+                <tr>
+                  <td data-row="6" data-col="1">3</td>
+                  <td data-row="6" data-col="2">2025-07-27</td>
+                  <td data-row="6" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="6" data-col="4">Gargoyles</td>
+                  <td data-row="6" data-col="5">2</td>
+                  <td data-row="6" data-col="6">at</td>
+                  <td data-row="6" data-col="7">5</td>
+                  <td data-row="6" data-col="8">Thunder</td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="1">4</td>
+                  <td data-row="7" data-col="2">2025-08-03</td>
+                  <td data-row="7" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="7" data-col="4">Nailers</td>
+                  <td data-row="7" data-col="5">4</td>
+                  <td data-row="7" data-col="6">at</td>
+                  <td data-row="7" data-col="7">6</td>
+                  <td data-row="7" data-col="8">Gargoyles</td>
+                </tr>
+                <tr>
+                  <td data-row="8" data-col="1">4</td>
+                  <td data-row="8" data-col="2">2025-08-03</td>
+                  <td data-row="8" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="8" data-col="4">Grizzlies</td>
+                  <td data-row="8" data-col="5">5</td>
+                  <td data-row="8" data-col="6">at</td>
+                  <td data-row="8" data-col="7">4</td>
+                  <td data-row="8" data-col="8">Thunder</td>
+                </tr>
+                <tr>
+                  <td data-row="9" data-col="1">NA</td>
+                  <td data-row="9" data-col="2">2025-08-10</td>
+                  <td data-row="9" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="9" data-col="4">OFF</td>
+                  <td data-row="9" data-col="5">NA</td>
+                  <td data-row="9" data-col="6">at</td>
+                  <td data-row="9" data-col="7">NA</td>
+                  <td data-row="9" data-col="8">NA</td>
+                </tr>
+                <tr>
+                  <td data-row="10" data-col="1">NA</td>
+                  <td data-row="10" data-col="2">2025-08-10</td>
+                  <td data-row="10" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="10" data-col="4">OFF</td>
+                  <td data-row="10" data-col="5">NA</td>
+                  <td data-row="10" data-col="6">at</td>
+                  <td data-row="10" data-col="7">NA</td>
+                  <td data-row="10" data-col="8">NA</td>
+                </tr>
+                <tr>
+                  <td data-row="11" data-col="1">5</td>
+                  <td data-row="11" data-col="2">2025-08-17</td>
+                  <td data-row="11" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="11" data-col="4">Gargoyles</td>
+                  <td data-row="11" data-col="5">6</td>
+                  <td data-row="11" data-col="6">at</td>
+                  <td data-row="11" data-col="7">3</td>
+                  <td data-row="11" data-col="8">Grizzlies</td>
+                </tr>
+                <tr>
+                  <td data-row="12" data-col="1">5</td>
+                  <td data-row="12" data-col="2">2025-08-17</td>
+                  <td data-row="12" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="12" data-col="4">Thunder</td>
+                  <td data-row="12" data-col="5">3</td>
+                  <td data-row="12" data-col="6">at</td>
+                  <td data-row="12" data-col="7">2</td>
+                  <td data-row="12" data-col="8">Nailers</td>
+                </tr>
+                <tr>
+                  <td data-row="13" data-col="1">6</td>
+                  <td data-row="13" data-col="2">2025-08-24</td>
+                  <td data-row="13" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="13" data-col="4">Thunder</td>
+                  <td data-row="13" data-col="5">8</td>
+                  <td data-row="13" data-col="6">at</td>
+                  <td data-row="13" data-col="7">4</td>
+                  <td data-row="13" data-col="8">Gargoyles</td>
+                </tr>
+                <tr>
+                  <td data-row="14" data-col="1">6</td>
+                  <td data-row="14" data-col="2">2025-08-24</td>
+                  <td data-row="14" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="14" data-col="4">Nailers</td>
+                  <td data-row="14" data-col="5">9</td>
+                  <td data-row="14" data-col="6">at</td>
+                  <td data-row="14" data-col="7">5</td>
+                  <td data-row="14" data-col="8">Grizzlies</td>
+                </tr>
+                <tr>
+                  <td data-row="15" data-col="1">NA</td>
+                  <td data-row="15" data-col="2">2025-08-31</td>
+                  <td data-row="15" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="15" data-col="4">OFF</td>
+                  <td data-row="15" data-col="5">NA</td>
+                  <td data-row="15" data-col="6">at</td>
+                  <td data-row="15" data-col="7">NA</td>
+                  <td data-row="15" data-col="8">NA</td>
+                </tr>
+                <tr>
+                  <td data-row="16" data-col="1">NA</td>
+                  <td data-row="16" data-col="2">2025-08-31</td>
+                  <td data-row="16" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="16" data-col="4">OFF</td>
+                  <td data-row="16" data-col="5">NA</td>
+                  <td data-row="16" data-col="6">at</td>
+                  <td data-row="16" data-col="7">NA</td>
+                  <td data-row="16" data-col="8">NA</td>
+                </tr>
+                <tr>
+                  <td data-row="17" data-col="1">7</td>
+                  <td data-row="17" data-col="2">2025-09-07</td>
+                  <td data-row="17" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="17" data-col="4">Thunder</td>
+                  <td data-row="17" data-col="5">5</td>
+                  <td data-row="17" data-col="6">at</td>
+                  <td data-row="17" data-col="7">6</td>
+                  <td data-row="17" data-col="8">Grizzlies</td>
+                </tr>
+                <tr>
+                  <td data-row="18" data-col="1">7</td>
+                  <td data-row="18" data-col="2">2025-09-07</td>
+                  <td data-row="18" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="18" data-col="4">Gargoyles</td>
+                  <td data-row="18" data-col="5">5</td>
+                  <td data-row="18" data-col="6">at</td>
+                  <td data-row="18" data-col="7">3</td>
+                  <td data-row="18" data-col="8">Nailers</td>
+                </tr>
+                <tr>
+                  <td data-row="19" data-col="1">8</td>
+                  <td data-row="19" data-col="2">2025-09-14</td>
+                  <td data-row="19" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="19" data-col="4">Nailers</td>
+                  <td data-row="19" data-col="5">2</td>
+                  <td data-row="19" data-col="6">at</td>
+                  <td data-row="19" data-col="7">3</td>
+                  <td data-row="19" data-col="8">Thunder</td>
+                </tr>
+                <tr>
+                  <td data-row="20" data-col="1">8</td>
+                  <td data-row="20" data-col="2">2025-09-14</td>
+                  <td data-row="20" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="20" data-col="4">Grizzlies</td>
+                  <td data-row="20" data-col="5">6</td>
+                  <td data-row="20" data-col="6">at</td>
+                  <td data-row="20" data-col="7">3</td>
+                  <td data-row="20" data-col="8">Gargoyles</td>
+                </tr>
+                <tr>
+                  <td data-row="21" data-col="1">9</td>
+                  <td data-row="21" data-col="2">2025-09-21</td>
+                  <td data-row="21" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="21" data-col="4">Gargoyles</td>
+                  <td data-row="21" data-col="5">0</td>
+                  <td data-row="21" data-col="6">at</td>
+                  <td data-row="21" data-col="7">4</td>
+                  <td data-row="21" data-col="8">Thunder</td>
+                </tr>
+                <tr>
+                  <td data-row="22" data-col="1">9</td>
+                  <td data-row="22" data-col="2">2025-09-21</td>
+                  <td data-row="22" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="22" data-col="4">Grizzlies</td>
+                  <td data-row="22" data-col="5">1</td>
+                  <td data-row="22" data-col="6">at</td>
+                  <td data-row="22" data-col="7">4</td>
+                  <td data-row="22" data-col="8">Nailers</td>
+                </tr>
+                <tr>
+                  <td data-row="23" data-col="1">10</td>
+                  <td data-row="23" data-col="2">2025-09-28</td>
+                  <td data-row="23" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="23" data-col="4">Nailers</td>
+                  <td data-row="23" data-col="5">0</td>
+                  <td data-row="23" data-col="6">at</td>
+                  <td data-row="23" data-col="7">6</td>
+                  <td data-row="23" data-col="8">Gargoyles</td>
+                </tr>
+                <tr>
+                  <td data-row="24" data-col="1">10</td>
+                  <td data-row="24" data-col="2">2025-09-28</td>
+                  <td data-row="24" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="24" data-col="4">Grizzlies</td>
+                  <td data-row="24" data-col="5">1</td>
+                  <td data-row="24" data-col="6">at</td>
+                  <td data-row="24" data-col="7">7</td>
+                  <td data-row="24" data-col="8">Thunder</td>
+                </tr>
+                <tr>
+                  <td data-row="25" data-col="1">11</td>
+                  <td data-row="25" data-col="2">2025-10-05</td>
+                  <td data-row="25" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="25" data-col="4">Gargoyles</td>
+                  <td data-row="25" data-col="5">7</td>
+                  <td data-row="25" data-col="6">at</td>
+                  <td data-row="25" data-col="7">3</td>
+                  <td data-row="25" data-col="8">Grizzlies</td>
+                </tr>
+                <tr>
+                  <td data-row="26" data-col="1">11</td>
+                  <td data-row="26" data-col="2">2025-10-05</td>
+                  <td data-row="26" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="26" data-col="4">Thunder</td>
+                  <td data-row="26" data-col="5">2</td>
+                  <td data-row="26" data-col="6">at</td>
+                  <td data-row="26" data-col="7">3</td>
+                  <td data-row="26" data-col="8">Nailers</td>
+                </tr>
+                <tr>
+                  <td data-row="27" data-col="1">12</td>
+                  <td data-row="27" data-col="2">2025-10-12</td>
+                  <td data-row="27" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="27" data-col="4">Nailers</td>
+                  <td data-row="27" data-col="5">5</td>
+                  <td data-row="27" data-col="6">at</td>
+                  <td data-row="27" data-col="7">4</td>
+                  <td data-row="27" data-col="8">Grizzlies</td>
+                </tr>
+                <tr>
+                  <td data-row="28" data-col="1">12</td>
+                  <td data-row="28" data-col="2">2025-10-12</td>
+                  <td data-row="28" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="28" data-col="4">Thunder</td>
+                  <td data-row="28" data-col="5">4</td>
+                  <td data-row="28" data-col="6">at</td>
+                  <td data-row="28" data-col="7">1</td>
+                  <td data-row="28" data-col="8">Gargoyles</td>
+                </tr>
+                <tr>
+                  <td data-row="29" data-col="1">13</td>
+                  <td data-row="29" data-col="2">2025-10-19</td>
+                  <td data-row="29" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="29" data-col="4">Thunder</td>
+                  <td data-row="29" data-col="5">3</td>
+                  <td data-row="29" data-col="6">at</td>
+                  <td data-row="29" data-col="7">2</td>
+                  <td data-row="29" data-col="8">Grizzlies</td>
+                </tr>
+                <tr>
+                  <td data-row="30" data-col="1">13</td>
+                  <td data-row="30" data-col="2">2025-10-19</td>
+                  <td data-row="30" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="30" data-col="4">Gargoyles</td>
+                  <td data-row="30" data-col="5">4</td>
+                  <td data-row="30" data-col="6">at</td>
+                  <td data-row="30" data-col="7">6</td>
+                  <td data-row="30" data-col="8">Nailers</td>
+                </tr>
+                <tr>
+                  <td data-row="31" data-col="1">14</td>
+                  <td data-row="31" data-col="2">2025-10-26</td>
+                  <td data-row="31" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="31" data-col="4">Nailers</td>
+                  <td data-row="31" data-col="5">2</td>
+                  <td data-row="31" data-col="6">at</td>
+                  <td data-row="31" data-col="7">5</td>
+                  <td data-row="31" data-col="8">Thunder</td>
+                </tr>
+                <tr>
+                  <td data-row="32" data-col="1">14</td>
+                  <td data-row="32" data-col="2">2025-10-26</td>
+                  <td data-row="32" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="32" data-col="4">Grizzlies</td>
+                  <td data-row="32" data-col="5">3</td>
+                  <td data-row="32" data-col="6">at</td>
+                  <td data-row="32" data-col="7">2</td>
+                  <td data-row="32" data-col="8">Gargoyles</td>
+                </tr>
+                <tr>
+                  <td data-row="33" data-col="1">15</td>
+                  <td data-row="33" data-col="2">2025-11-02</td>
+                  <td data-row="33" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="33" data-col="4">Gargoyles</td>
+                  <td data-row="33" data-col="5">NA</td>
+                  <td data-row="33" data-col="6">at</td>
+                  <td data-row="33" data-col="7">NA</td>
+                  <td data-row="33" data-col="8">Thunder</td>
+                </tr>
+                <tr>
+                  <td data-row="34" data-col="1">15</td>
+                  <td data-row="34" data-col="2">2025-11-02</td>
+                  <td data-row="34" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="34" data-col="4">Grizzlies</td>
+                  <td data-row="34" data-col="5">NA</td>
+                  <td data-row="34" data-col="6">at</td>
+                  <td data-row="34" data-col="7">NA</td>
+                  <td data-row="34" data-col="8">Nailers</td>
+                </tr>
+                <tr>
+                  <td data-row="35" data-col="1">16</td>
+                  <td data-row="35" data-col="2">2025-11-09</td>
+                  <td data-row="35" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="35" data-col="4">Nailers</td>
+                  <td data-row="35" data-col="5">NA</td>
+                  <td data-row="35" data-col="6">at</td>
+                  <td data-row="35" data-col="7">NA</td>
+                  <td data-row="35" data-col="8">Gargoyles</td>
+                </tr>
+                <tr>
+                  <td data-row="36" data-col="1">16</td>
+                  <td data-row="36" data-col="2">2025-11-09</td>
+                  <td data-row="36" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="36" data-col="4">Grizzlies</td>
+                  <td data-row="36" data-col="5">NA</td>
+                  <td data-row="36" data-col="6">at</td>
+                  <td data-row="36" data-col="7">NA</td>
+                  <td data-row="36" data-col="8">Thunder</td>
+                </tr>
+                <tr>
+                  <td data-row="37" data-col="1">17</td>
+                  <td data-row="37" data-col="2">2025-11-16</td>
+                  <td data-row="37" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="37" data-col="4">Gargoyles</td>
+                  <td data-row="37" data-col="5">NA</td>
+                  <td data-row="37" data-col="6">at</td>
+                  <td data-row="37" data-col="7">NA</td>
+                  <td data-row="37" data-col="8">Grizzlies</td>
+                </tr>
+                <tr>
+                  <td data-row="38" data-col="1">17</td>
+                  <td data-row="38" data-col="2">2025-11-16</td>
+                  <td data-row="38" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="38" data-col="4">Thunder</td>
+                  <td data-row="38" data-col="5">NA</td>
+                  <td data-row="38" data-col="6">at</td>
+                  <td data-row="38" data-col="7">NA</td>
+                  <td data-row="38" data-col="8">Nailers</td>
+                </tr>
+                <tr>
+                  <td data-row="39" data-col="1">18</td>
+                  <td data-row="39" data-col="2">2025-11-23</td>
+                  <td data-row="39" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="39" data-col="4">Nailers</td>
+                  <td data-row="39" data-col="5">NA</td>
+                  <td data-row="39" data-col="6">at</td>
+                  <td data-row="39" data-col="7">NA</td>
+                  <td data-row="39" data-col="8">Grizzlies</td>
+                </tr>
+                <tr>
+                  <td data-row="40" data-col="1">18</td>
+                  <td data-row="40" data-col="2">2025-11-23</td>
+                  <td data-row="40" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="40" data-col="4">Thunder</td>
+                  <td data-row="40" data-col="5">NA</td>
+                  <td data-row="40" data-col="6">at</td>
+                  <td data-row="40" data-col="7">NA</td>
+                  <td data-row="40" data-col="8">Gargoyles</td>
+                </tr>
+                <tr>
+                  <td data-row="41" data-col="1">19</td>
+                  <td data-row="41" data-col="2">2025-11-30</td>
+                  <td data-row="41" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="41" data-col="4">Thunder</td>
+                  <td data-row="41" data-col="5">NA</td>
+                  <td data-row="41" data-col="6">at</td>
+                  <td data-row="41" data-col="7">NA</td>
+                  <td data-row="41" data-col="8">Grizzlies</td>
+                </tr>
+                <tr>
+                  <td data-row="42" data-col="1">19</td>
+                  <td data-row="42" data-col="2">2025-11-30</td>
+                  <td data-row="42" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="42" data-col="4">Gargoyles</td>
+                  <td data-row="42" data-col="5">NA</td>
+                  <td data-row="42" data-col="6">at</td>
+                  <td data-row="42" data-col="7">NA</td>
+                  <td data-row="42" data-col="8">Nailers</td>
+                </tr>
+                <tr>
+                  <td data-row="43" data-col="1">20</td>
+                  <td data-row="43" data-col="2">2025-12-07</td>
+                  <td data-row="43" data-col="3">1899-12-30 19:00:00</td>
+                  <td data-row="43" data-col="4">E Champ</td>
+                  <td data-row="43" data-col="5">NA</td>
+                  <td data-row="43" data-col="6">at</td>
+                  <td data-row="43" data-col="7">NA</td>
+                  <td data-row="43" data-col="8">E Champ</td>
+                </tr>
+                <tr>
+                  <td data-row="44" data-col="1">20</td>
+                  <td data-row="44" data-col="2">2025-12-07</td>
+                  <td data-row="44" data-col="3">1899-12-30 20:30:00</td>
+                  <td data-row="44" data-col="4">E Conso</td>
+                  <td data-row="44" data-col="5">NA</td>
+                  <td data-row="44" data-col="6">at</td>
+                  <td data-row="44" data-col="7">NA</td>
+                  <td data-row="44" data-col="8">E Conso</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
