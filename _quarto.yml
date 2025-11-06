@@ -10,21 +10,29 @@ website:
       - text: Information
         menu:
         - text: "Season Details"
-          href: league/season_details.qmd
+          href: league/season-details.qmd
         - text: "Payment Methods"
-          href: league/payment_methods.qmd
+          href: league/payment-methods.qmd
         - text: "New or Returning Player Information"
-          href: league/player_info.qmd
+          href: league/player-info.qmd
+        - text: "Rules"
+          href: league/rules.qmd
       - text: About
         menu:
           - text: "the League"
             href: league/league.qmd
-          - text: "the History"
-            href: league/history.qmd
-          - text: "the Rules"
-            href: league/rules.qmd
           - text: "the Staff"
             href: league/staff.qmd
+          - text: "the History"
+            href: league/history.qmd
+          - text: "Norski Cup"
+            href: league/norski-cup.qmd
+          - text: "Sportsmanship Award"
+            href: league/sportsmanship-award.qmd
+          - text: "Jerseys & Patches"
+            href: league/jersey-patches.qmd
+          - text: "Photos"
+            href: league/photos.qmd
       - text: E Div
         menu:
           - text: "Teams"
