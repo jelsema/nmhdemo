@@ -13,17 +13,18 @@ title: "E Division Teams"
 # | warning: false
 
 
-library("googlesheets4")
 library("tidyverse")
 library("tinytable")
-
-googlesheets4::gs4_auth()
+library("readxl")
 
 
 # Read teams data
 
-teams <- read_sheet("https://docs.google.com/spreadsheets/d/1LAavWti7sxwgfcRw4tO4ECpkWZ5oWsL1vvbDPKycJPA/edit?usp=drive_link")
+# library("googlesheets4")
+# googlesheets4::gs4_auth()
+# teams <- read_sheet("https://docs.google.com/spreadsheets/d/1LAavWti7sxwgfcRw4tO4ECpkWZ5oWsL1vvbDPKycJPA/edit?usp=drive_link")
 
+teams <- read_excel( path="../../data/teams.xlsx")
 
 nplay <- nrow(teams)
 idx_odd <- seq(1,nplay,2)

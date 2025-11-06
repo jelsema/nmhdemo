@@ -13,17 +13,18 @@ title: "E Division Goalies"
 # | warning: false
 
 
-library("googlesheets4")
 library("tidyverse")
 library("tinytable")
-
-googlesheets4::gs4_auth()
-
+library("readxl")
 
 
 # Read scores data
 
-goalies <- read_sheet("https://docs.google.com/spreadsheets/d/1JJsE9A4X5NXep4POTjm9Fctvvl1b5T-5fzA1ZRSXDi0/edit?usp=drive_link")
+# library("googlesheets4")
+# googlesheets4::gs4_auth()
+# goalies <- read_sheet("https://docs.google.com/spreadsheets/d/1JJsE9A4X5NXep4POTjm9Fctvvl1b5T-5fzA1ZRSXDi0/edit?usp=drive_link")
+
+goalies <- read_excel( path="../../data/goalies.xlsx")
 
 nplay <- nrow(goalies)
 idx_odd <- seq(1,nplay,2)

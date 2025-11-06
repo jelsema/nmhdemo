@@ -18,7 +18,9 @@ Currently rostered players at both the Outpost and MAC may start making payments
 
 New players or returning players should visit the [New or Returning Player Information](player_info.qmd) page and reach out via [email or text](staff.qmd) to let me know they are interested in joining a team. Please note, it could take some time to respond as this is a busy time of the season.
 
-We always strive to get every player on a team who interested in joining, but given we maintain a limited number of skaters and one goalie per team, it may not be possible to accommodate everyone. Any players we are not able to get on a team may sub ([subbing in the league](rules.qmd#Substitutes) ) when the league starts up. Players that are subbing will be given priority when there is a mid-season opening, based on the best match of skill level for the player they are replacing. Subbing is also a great way to get ice time, determine the best division for a player and provide and opportunity for new players to get to know New Mexico’s great hockey community.
+We always strive to get every player on a team who interested in joining, but given we maintain a limited number of skaters and one goalie per team, it may not be possible to accommodate everyone. Any players we are not able to get on a team may sub 
+([subbing in the league](rules.qmd#substitutes) ) 
+when the league starts up. Players that are subbing will be given priority when there is a mid-season opening, based on the best match of skill level for the player they are replacing. Subbing is also a great way to get ice time, determine the best division for a player and provide and opportunity for new players to get to know New Mexico’s great hockey community.
 
 ---
 
@@ -34,7 +36,7 @@ Important notes about partial payments:
 ::::{.columns}
 
 :::{.column width=47%}
-# Outpost Season Details {.unnumbered}
+## Outpost Season Details {.unnumbered}
 
 We are planning to fill rosters for 24 teams again: 4 E Division, 4 D Division, 4 C Division, 4 B2 Division, and 4 B1 Division teams.
 
@@ -46,7 +48,7 @@ If space permits, players may skate in more than one division. Players will rece
 
 :::
 :::{.column width=47%}
-# MAC Season Details {.unnumbered}
+## MAC Season Details {.unnumbered}
 
 We are planning to fill 4 Tuesday (Intermediate – Advanced) and 4 Thursday (Beginner- Intermediate) teams.
 

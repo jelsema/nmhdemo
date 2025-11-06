@@ -13,17 +13,18 @@ title: "E Division Standings"
 # | warning: false
 
 
-library("googlesheets4")
 library("tidyverse")
 library("tinytable")
-
-googlesheets4::gs4_auth()
-
+library("readxl")
 
 
 # Read season data
 
-season <- read_sheet("https://docs.google.com/spreadsheets/d/1n77C-Pe6eofoOp3fiFg2mAGHT7XpGVp5r2uSpj4vZpE/edit?usp=drive_link")
+# library("googlesheets4")
+# googlesheets4::gs4_auth()
+# season <- read_sheet("https://docs.google.com/spreadsheets/d/1n77C-Pe6eofoOp3fiFg2mAGHT7XpGVp5r2uSpj4vZpE/edit?usp=drive_link")
+
+season <- read_excel( path="../../data/standings_season.xlsx")
 
 nplay <- nrow(season)
 idx_odd <- seq(1,nplay,2)
@@ -32,7 +33,9 @@ idx_evn <- seq(2,nplay,2)
 # Read playoff data
 
 
-playoff <- read_sheet("https://docs.google.com/spreadsheets/d/1P2-dBGOQdH1IzU2TxTjOEajork-Wtol0fKv_2pC8Tms/edit?usp=drive_link")
+# playoff <- read_sheet("https://docs.google.com/spreadsheets/d/1P2-dBGOQdH1IzU2TxTjOEajork-Wtol0fKv_2pC8Tms/edit?usp=drive_link")
+
+playoff <- read_excel( path="../../data/standings_playoff.xlsx")
 
 nplayp <- nrow(playoff)
 idx_oddp <- seq(1,nplayp,2)

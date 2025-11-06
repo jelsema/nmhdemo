@@ -13,17 +13,18 @@ title: "E Division Scores"
 # | warning: false
 
 
-library("googlesheets4")
 library("tidyverse")
 library("tinytable")
-
-googlesheets4::gs4_auth()
-
+library("readxl")
 
 
 # Read scores data
 
-scores <- read_sheet("https://docs.google.com/spreadsheets/d/16LFFxrTdfarSuJUx-eCk9385awKteJzOA4CBg3WmLmE/edit?usp=drive_link")
+# library("googlesheets4")
+# googlesheets4::gs4_auth()
+# scores <- read_sheet("https://docs.google.com/spreadsheets/d/16LFFxrTdfarSuJUx-eCk9385awKteJzOA4CBg3WmLmE/edit?usp=drive_link")
+
+scores <- read_excel( path="../../data/scores.xlsx")
 
 scores <- scores |> 
   mutate(
