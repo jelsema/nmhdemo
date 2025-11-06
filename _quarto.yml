@@ -6,6 +6,7 @@ website:
   title: "NM Hockey Demo"
   favicon: images/general/favicon.jpg
   navbar:
+    logo: "images/general/Web_Logo_07-14.png"
     left:
       - text: Information
         menu:

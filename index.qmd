@@ -4,12 +4,17 @@ title: ""
 
 
 
+:::::{.center}
+
 ![](images/general/Web_Logo_07-14.png)
 
 
+::::{.announcement-container}
+:::{.announcement}
 Become an Ice Wolves Host Family
-
-
+:::
+::::
 
 ![](images/general/Ice-Wolves-942x295.jpg)
 
+:::::
