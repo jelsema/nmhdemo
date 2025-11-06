@@ -44,7 +44,8 @@ format:
     toggle: true
     toc: true
     page-layout: full
-    # css: styles.css
+    css: styles.css
+    number-sections: true
     # other themes: Spacelab
 
 editor: source
