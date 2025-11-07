@@ -17,6 +17,7 @@ library("tidyverse")
 library("tinytable")
 library("readxl")
 
+library("DT")
 
 # Read season data
 
@@ -54,14 +55,23 @@ idx_evnp <- seq(2,nplayp,2)
 
 
 
-season |> 
-  # tt( theme="striped" ) |> 
-  tt() |> 
-  style_tt( i=0, background="skyblue3" ) |> 
-  style_tt( i=idx_odd, background="white", color="grey20" ) |> 
-  style_tt( i=idx_evn, background="grey90", color="grey20" ) |> 
-  style_tt( align="c" ) |> 
-  theme_html( portable=TRUE )
+# season |> 
+#   # tt( theme="striped" ) |> 
+#   tt() |> 
+#   style_tt( i=0, background="skyblue3" ) |> 
+#   style_tt( i=idx_odd, background="white", color="grey20" ) |> 
+#   style_tt( i=idx_evn, background="grey90", color="grey20" ) |> 
+#   style_tt( align="c" ) |> 
+#   theme_html( portable=TRUE )
+
+datatable( season, options = list(
+       pageLength = -1,
+      initComplete = JS(
+        "function(settings, json) {",
+        "$(this.api().table().header()).css({'background-color': 'rgba(73, 172, 204)', 'color': 'white'});",
+        "}")
+    ))
+
 
 
 ```
@@ -78,14 +88,22 @@ season |>
 
 if( any(playoff$W > 0) ){ 
 
-playoff |> 
-  # tt( theme="striped" ) |> 
-  tt() |> 
-  style_tt( i=0, background="skyblue3" ) |> 
-  style_tt( i=idx_odd, background="white", color="grey20" ) |> 
-  style_tt( i=idx_evn, background="grey90", color="grey20" ) |> 
-  style_tt( align="c" ) |> 
-  theme_html( portable=TRUE )
+# playoff |> 
+#   # tt( theme="striped" ) |> 
+#   tt() |> 
+#   style_tt( i=0, background="skyblue3" ) |> 
+#   style_tt( i=idx_odd, background="white", color="grey20" ) |> 
+#   style_tt( i=idx_evn, background="grey90", color="grey20" ) |> 
+#   style_tt( align="c" ) |> 
+#   theme_html( portable=TRUE )
+
+  datatable( playoff, options = list(
+       pageLength = -1,
+      initComplete = JS(
+        "function(settings, json) {",
+        "$(this.api().table().header()).css({'background-color': 'rgba(73, 172, 204)', 'color': 'white'});",
+        "}")
+    ))
 
 }
   
