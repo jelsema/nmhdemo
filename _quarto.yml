@@ -18,6 +18,10 @@ website:
           href: league/player-info.qmd
         - text: "Rules"
           href: league/rules.qmd
+        - text: "Staff Responsibilities"
+          href: league/responsibilities.qmd
+        - text: "Draft"
+          href: league/draft-notes.qmd
       - text: About
         menu:
           - text: "the League"

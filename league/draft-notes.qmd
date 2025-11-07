@@ -1,0 +1,78 @@
+---
+title: "Draft Notes"
+---
+
+
+## General Information
+
+Review the [captain's duties](responsibilities#captains).
+
+
+Subs/skill levels
+
+- For now, sub needs are due by [DAY] at noon. The way the substitute player spreadsheet is set up doesn’t have the captains listed, so try to have the message say something like “[TEAM] needs subs for [PLAYER1], [PLAYER2], …”
+- The VC's main target is to match skill levels. How the captains ranked players will inform this.
+- If possible the VC will also try to match positions, but that’s a distant second place.
+- Sometimes there might not be good matches, the VC will try to balance out. E.g., both teams might get “downgraded” or “upgraded” depending on available subs.
+
+
+
+
+## Draft Process
+
+### Goalie draft
+
+- Goalies get ranked and drawn out of a hat.
+- Two ways to determine the selection order:
+  1. Rochambeau tournament among the captains to determine selection order. Captains sitting next to each other are first pairs. Then winner vs winner and loser vs loser.
+  2. Flip coins. First "odd one out" is first draw (may need multiple flips). Second odd one out is second draw. For final two, first one to match the first "odd one out" is third (again, may need multiple flips).
+- Captain's draft in the order of their goalie rank: 4-3-2-1 , 1-2-3-4, 4-3-2-1, ...
+- If two goalies are tied in ranks, the captains Rochambeau (best of three) to determine who goes first. 
+
+If **all** captains prefer, goalies can be drafted first rather than randomly picked. Then the player draft order is based on the goalie rank.
+
+
+### Player Draft
+
+Player ranks
+
+- The outgoing and incoming captains ranked all the players. These got compiled with very complex statistical analysis (an average), and then grouped into "1", "2", "3", and "4".
+- To enforce a degree of parity across teams, there’s a limit on how many players in each rank you can have: 
+  - Each team can have two 1’s, three 2’s, four 3’s, and one 4.
+  - Important: The final ranks have been "massaged" to some degree to make sure that each rank has a multiple of 4.
+    There are **absolutely** players who "should" be ranked higher or lower, but the mechanics mean they have to be "upgraded" or "downgraded".
+    There is also lot of overlap between ranks.
+- You can write the names on the sheet, the colors correspond to their rank. 
+
+
+
+Player sets
+
+- There are a couple sets of players that have to be drafted together.
+- What we did in the past was: 
+  - If there are three players, you’ll miss one turn.
+  - If there are two players you don’t miss a turn.
+  - If you all like that, we can do it. If you’d rather not, we can do something different, but we have to decide before we start drafting.
+
+
+Draft strategy
+
+
+- There are any number of draft strategies. 
+  - You might want to pick the 1's first, or maybe get who you think is the best of the 4's.
+  - You might think some player is underrated for their rank and grab them early. 
+  - You might think some player is overrated for their rank and fill up that rank in your team with others players.
+  - By the point you're asked to be a captain, you should be somewhat familiar with most of the division regular and have an idea if someone is over or underrated.
+  - You might get "locked in" to a set (or just some players). Like if there's a set with two 1's, and each other team picked a 1 already, you're guaranteed to have that set, and you don't need to actually select them until the end.
+  
+- Don't feel any pressure to draft me. I don't care if I get drafted early or late, or who I skate with.
+
+- As players get drafted I’ll remove from the pool and add them to the spreadsheet and show you, so you’ll be able to see who’s still available and how the teams are shaping up.
+
+
+
+
+
+
+
+

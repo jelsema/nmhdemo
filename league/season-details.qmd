@@ -16,7 +16,7 @@ We are starting registration for the 2026 Spring NMHockey season at the Outpost 
 
 Currently rostered players at both the Outpost and MAC may start making payments Tuesday, November 25.
 
-New players or returning players should visit the [New or Returning Player Information](player_info.qmd) page and reach out via [email or text](staff.qmd) to let me know they are interested in joining a team. Please note, it could take some time to respond as this is a busy time of the season.
+New players or returning players should visit the [New or Returning Player Information](player-info.qmd) page and reach out via [email or text](staff.qmd) to let me know they are interested in joining a team. Please note, it could take some time to respond as this is a busy time of the season.
 
 We always strive to get every player on a team who interested in joining, but given we maintain a limited number of skaters and one goalie per team, it may not be possible to accommodate everyone. Any players we are not able to get on a team may sub 
 ([subbing in the league](rules.qmd#substitutes) ) 

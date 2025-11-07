@@ -11,6 +11,53 @@ title: ""
 
 ::::{.announcement-container}
 :::{.announcement}
+**Registration opening soon for 2026 Spring NMHockey Season!**
+
+Check out [season details](league/season-details.qmd) for more information.
+
+:::
+::::
+
+
+<!-----
+::::{.columns}
+:::{.column width=48%}
+B1 Division
+
+
+:::
+:::{.column width=4%}
+:::
+:::{.column width=48%}
+B2 Division
+
+:::
+::::
+
+::::{.columns}
+:::{.column width=48%}
+C Division
+:::
+:::{.column width=4%}
+:::
+:::{.column width=48%}
+D Division
+
+:::
+::::
+
+::::{.columns}
+:::{.column width=48%}
+E Division
+:::
+::::
+----->
+
+
+
+
+::::{.announcement-container}
+:::{.announcement}
 Become an Ice Wolves Host Family
 :::
 ::::
